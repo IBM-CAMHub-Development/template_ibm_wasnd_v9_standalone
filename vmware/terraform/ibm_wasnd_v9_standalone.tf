@@ -378,7 +378,7 @@ variable "WASNode01_root_disk_size" {
 }
 
 module "provision_proxy" {
-  source 						= "git::https://github.com/IBM-CAMHub-Open/terraform-modules.git?ref=1.0//vmware/proxy"
+  source 						= "git::https://github.com/IBM-CAMHub-Development/terraform-modules.git?ref=1.0//vmware/proxy"
   ip                  = "${var.WASNode01_ipv4_address}"
   id									= "${vsphere_virtual_machine.WASNode01.id}"
   ssh_user            = "${var.WASNode01-os_admin_user}"
